@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Board Interest – Roadrunner STEM Initiative</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #00695c;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    button {
+      background-color: #00695c;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Roadrunner STEM Initiative</h1>
+    <p>Empower • Educate • Elevate — Digitally</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Board of Directors Interest Form</h2>
+
+      <form action="https://formspree.io/f/xqaplybr" method="POST">
+        <label>Full Name:<br>
+          <input type="text" name="name" required>
+        </label><br><br>
+
+        <label>Email:<br>
+          <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>Phone Number:<br>
+          <input type="tel" name="phone">
+        </label><br><br>
+
+        <label>Mailing Address:<br>
+          <textarea name="address" rows="2"></textarea>
+        </label><br><br>
+
+        <label>Community Role:<br>
+          <select name="community_role" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Parent">Parent</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+            <option value="Local Business">Local Business</option>
+            <option value="Community Advocate">Community Advocate</option>
+            <option value="Other">Other</option>
+          </select>
+        </label><br><br>
+
+        <label>Pronouns (optional):<br>
+          <input type="text" name="pronouns" placeholder="e.g. she/her, they/them">
+        </label><br><br>
+
+        <label>LinkedIn Profile (optional):<br>
+          <input type="url" name="linkedin" placeholder="https://linkedin.com/in/yourname">
+        </label><br><br>
+
+        <label>Relevant Experience:<br>
+          <textarea name="experience" rows="4" required></textarea>
+        </label><br><br>
+
+        <label>Interest Areas:<br>
+          <input type="checkbox" name="interest_area" value="Fundraising"> Fundraising<br>
+          <input type="checkbox" name="interest_area" value="Community Outreach"> Community Outreach<br>
+          <input type="checkbox" name="interest_area" value="STEM Education"> STEM Education<br>
+          <input type="checkbox" name="interest_area" value="Policy / Advocacy"> Policy / Advocacy<br>
+          <input type="checkbox" name="interest_area" value="Finance / Legal"> Finance / Legal<br>
+          <input type="checkbox" name="interest_area" value="Other"> Other
+        </label><br><br>
+
+        <label>Why do you want to join the board?<br>
+          <textarea name="motivation" rows="4" required></textarea>
+        </label><br><br>
+
+        <label>How many hours per month can you commit?<br>
+          <input type="text" name="availability">
+        </label><br><br>
+
+        <label>Resume Link (optional):<br>
+          <input type="url" name="resume_link" placeholder="Google Drive, Dropbox, etc.">
+        </label><br><br>
+
+        <p>If you'd prefer to email your resume, please send it to: 
+          <a href="mailto:roadrunnersteminitiative+resume@gmail.com">roadrunnersteminitiative+resume@gmail.com</a>
+        </p><br>
+
+        <label>Demographics (optional):<br>
+          <textarea name="demographics" placeholder="Share anything you’d like us to know (race/ethnicity, gender identity, etc.)"></textarea>
+        </label><br><br>
+
+        <button type="submit">Submit Interest</button>
+      </form>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 1rem; background: #eee; font-size: 0.9rem;">
+    &copy; 2025 Roadrunner STEM Initiative · Las Cruces, NM
+  </footer>
+
+</body>
+</html>
