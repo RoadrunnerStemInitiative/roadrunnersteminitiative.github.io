@@ -19,29 +19,30 @@
 
       <form action="https://formspree.io/f/xqaplybr" method="POST">
         <label>Full Name:<br>
-          <input type="text" name="name" required>
+          <input type="text" name="name" placeholder="John Doe" required>
         </label><br><br>
 
         <label>Email:<br>
-          <input type="email" name="email" required>
+          <input type="email" name="email" placeholder="name@email.com" required>
         </label><br><br>
 
         <label>Phone Number:<br>
-          <input type="tel" name="phone">
+          <input type="tel" name="phone" placeholder="(575) 555-1234">
         </label><br><br>
 
         <label>Mailing Address:<br>
-          <textarea name="address" rows="2"></textarea>
+          <textarea name="address" placeholder="123 Main St, Las Cruces, NM" rows="2"></textarea>
         </label><br><br>
 
         <label>Community Role:<br>
           <select name="community_role" required>
             <option value="" disabled selected>Select an option</option>
-            <option value="Parent">Parent</option>
-            <option value="Teacher">Teacher</option>
-            <option value="Student">Student</option>
-            <option value="Local Business">Local Business</option>
-            <option value="Community Advocate">Community Advocate</option>
+            <option value="Parent or Guardian">Parent or Guardian</option>
+            <option value="Educator (K–12 or Higher Ed)">Educator (K–12 or Higher Ed)</option>
+            <option value="STEM Professional">STEM Professional</option>
+            <option value="Local Business Owner or Leader">Local Business Owner or Leader</option>
+            <option value="Nonprofit or Community Advocate">Nonprofit or Community Advocate</option>
+            <option value="Student (High School or College)">Student (High School or College)</option>
             <option value="Other">Other</option>
           </select>
         </label><br><br>
@@ -55,24 +56,25 @@
         </label><br><br>
 
         <label>Relevant Experience:<br>
-          <textarea name="experience" rows="4" required></textarea>
+          <textarea name="experience" placeholder="Relevant skills or past involvement" rows="4" required></textarea>
         </label><br><br>
 
-        <label>Interest Areas:<br>
-          <input type="checkbox" name="interest_area" value="Fundraising"> Fundraising<br>
-          <input type="checkbox" name="interest_area" value="Community Outreach"> Community Outreach<br>
-          <input type="checkbox" name="interest_area" value="STEM Education"> STEM Education<br>
-          <input type="checkbox" name="interest_area" value="Policy / Advocacy"> Policy / Advocacy<br>
-          <input type="checkbox" name="interest_area" value="Finance / Legal"> Finance / Legal<br>
-          <input type="checkbox" name="interest_area" value="Other"> Other
-        </label><br><br>
+        <label>Interest Areas:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="interest_area" value="Fundraising"> Fundraising</label><br>
+  <label><input type="checkbox" name="interest_area" value="Community Outreach"> Community Outreach</label><br>
+  <label><input type="checkbox" name="interest_area" value="STEM Education"> STEM Education</label><br>
+  <label><input type="checkbox" name="interest_area" value="Policy / Advocacy"> Policy / Advocacy</label><br>
+  <label><input type="checkbox" name="interest_area" value="Finance / Legal"> Finance / Legal</label><br>
+  <label><input type="checkbox" name="interest_area" value="Other"> Other</label>
+</div>
 
         <label>Why do you want to join the board?<br>
-          <textarea name="motivation" rows="4" required></textarea>
+          <textarea name="motivation" placeholder="Why would you like to serve on the board?" rows="4" required></textarea>
         </label><br><br>
 
         <label>How many hours per month can you commit?<br>
-          <input type="text" name="availability">
+          <input type="text" name="availability" placeholder="e.g., 5 hours/month">
         </label><br><br>
 
         <label>Resume Link (optional):<br>
