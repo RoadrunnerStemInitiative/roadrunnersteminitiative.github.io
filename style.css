@@ -115,16 +115,34 @@ form button:hover {
   margin-left: 0.5rem;
 }
 .checkbox-group {
-  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
 }
-.checkbox-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+@media (max-width: 600px) {
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
 }
+.checkbox-row input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and label */
+  flex-shrink: 0; /* Prevents checkbox from shrinking */
+}
+
+.checkbox-row label {
+  margin-bottom: 0; /* Remove any default margin */
+  font-weight: normal; /* Match your form's label style */
+}
+
+/* For the "Other" text input */
 .checkbox-row input[type="text"] {
-  flex: 1;
+  margin-left: 10px;
   padding: 0.5rem;
   font-size: 1rem;
+  flex: 1;
+  max-width: 200px; /* Adjust as needed */
+}
+#other-text {
+  display: none;
+  transition: all 0.3s ease;
 }
