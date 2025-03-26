@@ -20,7 +20,7 @@ main {
 }
 
 .aboutus-section,
-.missionvision-section.two-column,
+.missionvision-section,
 .boardrecruit-section,
 .survey-section,
 .contactus-section,
@@ -54,13 +54,13 @@ footer {
   font-size: 0.9rem;
 }
 
-.two-column {
+.missionvision-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.two-column > div {
+.missionvision-section > div {
   flex: 1;
   min-width: 280px;
 }
@@ -119,9 +119,9 @@ form button:hover {
 }
 .checkbox-row {
   display: flex;
-  align-items: left;
- /* gap: 0.5rem;
-  margin-bottom: 0.5rem;*/
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .checkbox-row input[type="text"] {
   flex: 1;
