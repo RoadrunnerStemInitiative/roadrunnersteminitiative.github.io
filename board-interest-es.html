@@ -58,14 +58,35 @@
           <textarea name="experience" rows="4" required></textarea>
         </label><br><br>
 
-        <label>Áreas de interés:<br>
-          <input type="checkbox" name="interest_area" value="Fundraising"> Recaudación de fondos<br>
-          <input type="checkbox" name="interest_area" value="Community Outreach"> Alcance comunitario<br>
-          <input type="checkbox" name="interest_area" value="STEM Education"> Educación STEM<br>
-          <input type="checkbox" name="interest_area" value="Policy / Advocacy"> Política / Incidencia<br>
-          <input type="checkbox" name="interest_area" value="Finance / Legal"> Finanzas / Legal<br>
-          <input type="checkbox" name="interest_area" value="Other"> Otro
-        </label><br><br>
+<label>Áreas de interés:</label>
+<div class="checkbox-group">
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Fundraising" id="fundraising">
+    <label for="fundraising"> Recaudación de fondos</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Community Outreach" id="outreach">
+    <label for="outreach"> Alcance comunitario</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="STEM Education" id="stem">
+    <label for="stem"> Educación STEM</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Policy / Advocacy" id="policy">
+    <label for="policy"> Política / Incidencia</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Finance / Legal" id="finance">
+    <label for="finance"> Finanzas / Legal</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Other" id="other">
+    <label for="other"> Otro</label>
+    <input type="text" name="interest_area_other" id="other-text" placeholder="por favor, especifique" style="display: none;">
+  </div>
+</div>
+<br><br>
 
         <label>¿Por qué deseas formar parte de la junta?:<br>
           <textarea name="motivation" rows="4" required></textarea>
@@ -93,9 +114,16 @@
   </main>
 
   <footer>
-    &copy; 2025 Roadrunner STEM Initiative · Las Cruces, NM
+    &copy; 2025 Roadrunner STEM Initiative · Las Cruces, NM<br>
     <a href="privacy-es.html">Política de Privacidad</a>
-
   </footer>
+  <script>
+  const otherCheckbox = document.getElementById('other');
+  const otherText = document.getElementById('other-text');
+
+  otherCheckbox.addEventListener('change', () => {
+    otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
+  });
+</script>
 </body>
 </html>

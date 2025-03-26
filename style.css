@@ -119,7 +119,7 @@ form button:hover {
 }
 .checkbox-row {
   display: flex;
-  align-items: center;
+  align-items: left;
  /* gap: 0.5rem;
   margin-bottom: 0.5rem;*/
 }
