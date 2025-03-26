@@ -125,4 +125,5 @@ form button:hover {
 
 .checkbox-group input[type="checkbox"] {
   margin-right: 0.5rem;
+  vertical-align: middle;
 }
