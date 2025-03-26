@@ -114,3 +114,9 @@ form button:hover {
   text-decoration: underline;
   margin-left: 0.5rem;
 }
+.checkbox-group label {
+  display: block;
+  font-weight: normal;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
