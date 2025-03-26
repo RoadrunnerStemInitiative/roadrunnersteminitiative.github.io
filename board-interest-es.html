@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interés en la Junta – Roadrunner STEM Initiative</title>
+  <title>Formulario de Interés – Iniciativa STEM Roadrunner</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Roadrunner STEM Initiative</h1>
+    <h1>Iniciativa STEM Roadrunner</h1>
     <p>Empoderar • Educar • Elevar — Digitalmente</p>
   </header>
 
@@ -19,35 +19,36 @@
 
       <form action="https://formspree.io/f/xqaplybr" method="POST">
         <label>Nombre completo:<br>
-          <input type="text" name="name" required>
+          <input type="text" name="name" placeholder="María González" required>
         </label><br><br>
 
         <label>Correo electrónico:<br>
-          <input type="email" name="email" required>
+          <input type="email" name="email" placeholder="nombre@correo.com" required>
         </label><br><br>
 
         <label>Número de teléfono:<br>
-          <input type="tel" name="phone">
+          <input type="tel" name="phone" placeholder="(575) 555-1234">
         </label><br><br>
 
         <label>Dirección postal:<br>
-          <textarea name="address" rows="2"></textarea>
+          <textarea name="address" placeholder="Calle Principal #123, Las Cruces, NM" rows="2"></textarea>
         </label><br><br>
 
         <label>Rol en la comunidad:<br>
           <select name="community_role" required>
-            <option value="" disabled selected>Selecciona una opción</option>
-            <option value="Parent">Padre/Madre</option>
-            <option value="Teacher">Docente</option>
-            <option value="Student">Estudiante</option>
-            <option value="Local Business">Negocio local</option>
-            <option value="Community Advocate">Defensor/a comunitario/a</option>
-            <option value="Other">Otro</option>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="Padre/Madre o Tutor">Padre/Madre o Tutor</option>
+            <option value="Educador (K-12 o Universidad)">Educador (K-12 o Universidad)</option>
+            <option value="Profesional en STEM">Profesional en STEM</option>
+            <option value="Dueño/a o Líder de Negocio Local">Dueño/a o Líder de Negocio Local</option>
+            <option value="Defensor/a Comunitario o de Organización Sin Fines de Lucro">Defensor/a Comunitario o de Organización Sin Fines de Lucro</option>
+            <option value="Estudiante (Preparatoria o Universidad)">Estudiante (Preparatoria o Universidad)</option>
+            <option value="Otro">Otro</option>
           </select>
         </label><br><br>
 
         <label>Pronombres (opcional):<br>
-          <input type="text" name="pronouns" placeholder="ej. ella, él, elle">
+          <input type="text" name="pronouns" placeholder="ej. ella/elle, ellos/elles">
         </label><br><br>
 
         <label>Perfil de LinkedIn (opcional):<br>
@@ -55,75 +56,77 @@
         </label><br><br>
 
         <label>Experiencia relevante:<br>
-          <textarea name="experience" rows="4" required></textarea>
+          <textarea name="experience" placeholder="Habilidades o experiencia previa relacionada" rows="4" required></textarea>
         </label><br><br>
 
-<label>Áreas de interés:</label>
-<div class="checkbox-group">
-  <div class="checkbox-row">
-    <input type="checkbox" name="interest_area" value="Fundraising" id="fundraising">
-    <label for="fundraising"> Recaudación de fondos</label>
-  </div>
-  <div class="checkbox-row">
-    <input type="checkbox" name="interest_area" value="Community Outreach" id="outreach">
-    <label for="outreach"> Alcance comunitario</label>
-  </div>
-  <div class="checkbox-row">
-    <input type="checkbox" name="interest_area" value="STEM Education" id="stem">
-    <label for="stem"> Educación STEM</label>
-  </div>
-  <div class="checkbox-row">
-    <input type="checkbox" name="interest_area" value="Policy / Advocacy" id="policy">
-    <label for="policy"> Política / Incidencia</label>
-  </div>
-  <div class="checkbox-row">
-    <input type="checkbox" name="interest_area" value="Finance / Legal" id="finance">
-    <label for="finance"> Finanzas / Legal</label>
-  </div>
-  <div class="checkbox-row">
-    <input type="checkbox" name="interest_area" value="Other" id="other">
-    <label for="other"> Otro</label>
-    <input type="text" name="interest_area_other" id="other-text" placeholder="por favor, especifique" style="display: none;">
-  </div>
-</div>
-<br><br>
+        <label>Áreas de interés:</label>
+        <div class="checkbox-group">
+          <div class="checkbox-row">
+            <input type="checkbox" name="interest_area" value="Recaudación de fondos" id="fundraising">
+            <label for="fundraising">Recaudación de fondos</label>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" name="interest_area" value="Participación comunitaria" id="outreach">
+            <label for="outreach">Participación comunitaria</label>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" name="interest_area" value="Educación STEM" id="stem">
+            <label for="stem">Educación STEM</label>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" name="interest_area" value="Políticas/Defensa" id="policy">
+            <label for="policy">Políticas/Defensa</label>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" name="interest_area" value="Finanzas/Legal" id="finance">
+            <label for="finance">Finanzas/Legal</label>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" name="interest_area" value="Otro" id="other">
+            <label for="other">Otro</label>
+            <input type="text" name="interest_area_other" id="other-text" placeholder="Especifique" style="display: none;">
+          </div>
+        </div>
+        <br><br>
 
-        <label>¿Por qué deseas formar parte de la junta?:<br>
-          <textarea name="motivation" rows="4" required></textarea>
+        <label>¿Por qué quiere unirse a la junta directiva?<br>
+          <textarea name="motivation" placeholder="¿Por qué le gustaría servir en la junta directiva?" rows="4" required></textarea>
         </label><br><br>
 
-        <label>¿Cuántas horas al mes puedes comprometer?:<br>
-          <input type="text" name="availability">
+        <label>¿Cuántas horas por mes puede comprometer?<br>
+          <input type="text" name="availability" placeholder="ej. 5 horas/mes">
         </label><br><br>
 
-        <label>Enlace a tu currículum (opcional):<br>
+        <label>Enlace a currículum (opcional):<br>
           <input type="url" name="resume_link" placeholder="Google Drive, Dropbox, etc.">
         </label><br><br>
 
-        <p>Si prefieres enviar tu currículum por correo electrónico, mándalo a: 
-          <a href="mailto:roadrunnersteminitiative+resume@gmail.com">roadrunnersteminitiative+resume@gmail.com</a>
+        <p>Si prefiere enviar su currículum por correo electrónico: 
+          <a href="mailto:roadrunnersteminitiative+resume@gmail.com" target="_blank" class="button">roadrunnersteminitiative+resume@gmail.com</a>
         </p><br>
 
-        <label>Información demográfica (opcional):<br>
-          <textarea name="demographics" placeholder="Comparte lo que desees que sepamos (raza/etnia, identidad de género, etc.)"></textarea>
+        <label>Datos demográficos (opcional):<br>
+          <textarea name="demographics" placeholder="Comparta cualquier información que desee (etnia, identidad de género, etc.)"></textarea>
         </label><br><br>
 
-        <button type="submit">Enviar Interés</button>
+        <button type="submit">Enviar interés</button>
       </form>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Roadrunner STEM Initiative · Las Cruces, NM<br>
-    <a href="privacy-es.html">Política de Privacidad</a>
+    &copy; 2025 Iniciativa STEM Roadrunner · Las Cruces, NM<br>
+    <a href="politica-de-privacidad.html">Política de Privacidad</a> | 
+    <a href="index-es.html">Volver al inicio</a>
   </footer>
-  <script>
-  const otherCheckbox = document.getElementById('other');
-  const otherText = document.getElementById('other-text');
 
-  otherCheckbox.addEventListener('change', () => {
-    otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
-  });
-</script>
+  <script>
+    const otherCheckbox = document.getElementById('other');
+    const otherText = document.getElementById('other-text');
+
+    otherCheckbox.addEventListener('change', () => {
+      otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
+    });
+  </script>
 </body>
 </html>
