@@ -19,7 +19,12 @@ main {
   margin: auto;
 }
 
-.section {
+.aboutus-section,
+.missionvision-section,
+.boardrecruit-section,
+.survey-section,
+.contactus-section,
+.interestform-section {
   background: white;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -47,4 +52,53 @@ footer {
   padding: 1rem;
   background: #eee;
   font-size: 0.9rem;
+}
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.two-column > div {
+  flex: 1;
+  min-width: 280px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+form button {
+  align-self: flex-start;
+  background-color: #00695c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #004d40;
 }
