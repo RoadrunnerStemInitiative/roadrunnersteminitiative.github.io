@@ -102,3 +102,15 @@ form button {
 form button:hover {
   background-color: #004d40;
 }
+.language-switch {
+  text-align: right;
+  margin-top: -1rem;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.language-switch a {
+  color: white;
+  text-decoration: underline;
+  margin-left: 0.5rem;
+}

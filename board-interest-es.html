@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interés en la Junta – Roadrunner STEM Initiative</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Roadrunner STEM Initiative</h1>
+    <p>Empoderar • Educar • Elevar — Digitalmente</p>
+  </header>
 
+  <main>
+    <section class="interestform-section">
+      <h2>Formulario de Interés para la Junta Directiva</h2>
+
+      <form action="https://formspree.io/f/xqaplybr" method="POST">
+        <label>Nombre completo:<br>
+          <input type="text" name="name" required>
+        </label><br><br>
+
+        <label>Correo electrónico:<br>
+          <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>Número de teléfono:<br>
+          <input type="tel" name="phone">
+        </label><br><br>
+
+        <label>Dirección postal:<br>
+          <textarea name="address" rows="2"></textarea>
+        </label><br><br>
+
+        <label>Rol en la comunidad:<br>
+          <select name="community_role" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Parent">Padre/Madre</option>
+            <option value="Teacher">Docente</option>
+            <option value="Student">Estudiante</option>
+            <option value="Local Business">Negocio local</option>
+            <option value="Community Advocate">Defensor/a comunitario/a</option>
+            <option value="Other">Otro</option>
+          </select>
+        </label><br><br>
+
+        <label>Pronombres (opcional):<br>
+          <input type="text" name="pronouns" placeholder="ej. ella, él, elle">
+        </label><br><br>
+
+        <label>Perfil de LinkedIn (opcional):<br>
+          <input type="url" name="linkedin" placeholder="https://linkedin.com/in/tunombre">
+        </label><br><br>
+
+        <label>Experiencia relevante:<br>
+          <textarea name="experience" rows="4" required></textarea>
+        </label><br><br>
+
+        <label>Áreas de interés:<br>
+          <input type="checkbox" name="interest_area" value="Fundraising"> Recaudación de fondos<br>
+          <input type="checkbox" name="interest_area" value="Community Outreach"> Alcance comunitario<br>
+          <input type="checkbox" name="interest_area" value="STEM Education"> Educación STEM<br>
+          <input type="checkbox" name="interest_area" value="Policy / Advocacy"> Política / Incidencia<br>
+          <input type="checkbox" name="interest_area" value="Finance / Legal"> Finanzas / Legal<br>
+          <input type="checkbox" name="interest_area" value="Other"> Otro
+        </label><br><br>
+
+        <label>¿Por qué deseas formar parte de la junta?:<br>
+          <textarea name="motivation" rows="4" required></textarea>
+        </label><br><br>
+
+        <label>¿Cuántas horas al mes puedes comprometer?:<br>
+          <input type="text" name="availability">
+        </label><br><br>
+
+        <label>Enlace a tu currículum (opcional):<br>
+          <input type="url" name="resume_link" placeholder="Google Drive, Dropbox, etc.">
+        </label><br><br>
+
+        <p>Si prefieres enviar tu currículum por correo electrónico, mándalo a: 
+          <a href="mailto:roadrunnersteminitiative+resume@gmail.com">roadrunnersteminitiative+resume@gmail.com</a>
+        </p><br>
+
+        <label>Información demográfica (opcional):<br>
+          <textarea name="demographics" placeholder="Comparte lo que desees que sepamos (raza/etnia, identidad de género, etc.)"></textarea>
+        </label><br><br>
+
+        <button type="submit">Enviar Interés</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Roadrunner STEM Initiative · Las Cruces, NM
+  </footer>
+</body>
+</html>
