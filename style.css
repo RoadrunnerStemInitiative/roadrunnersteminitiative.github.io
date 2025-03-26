@@ -121,10 +121,12 @@ form button:hover {
 .checkbox-row {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.checkbox-row label {
-  margin-left: 0.5rem;
-  font-weight: normal;
+.checkbox-row input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
 }

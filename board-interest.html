@@ -61,15 +61,30 @@
 
         <label>Interest Areas:</label>
 <div class="checkbox-group">
-  <div class="checkbox-row"><input type="checkbox" name="interest_area" value="Fundraising"><label>Fundraising</label></div>
-  <div class="checkbox-row"><input type="checkbox" name="interest_area" value="Community Outreach"><label>Community Outreach</label></div>
-  <div class="checkbox-row"><input type="checkbox" name="interest_area" value="STEM Education"><label>STEM Education</label></div>
-  <div class="checkbox-row"><input type="checkbox" name="interest_area" value="Policy / Advocacy"><label>Policy / Advocacy</label></div>
-  <div class="checkbox-row"><input type="checkbox" name="interest_area" value="Finance / Legal"><label>Finance / Legal</label></div>
   <div class="checkbox-row">
-    <input type="checkbox" name="interest_area" value="Other" id="other-checkbox">
-    <label for="other-checkbox">Other</label>
-    <input type="text" name="interest_area_other" id="other-text" placeholder="Please specify" style="display: none; margin-left: 0.5rem;">
+    <input type="checkbox" name="interest_area" value="Fundraising" id="fundraising">
+    <label for="fundraising">Fundraising</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Community Outreach" id="outreach">
+    <label for="outreach">Community Outreach</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="STEM Education" id="stem">
+    <label for="stem">STEM Education</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Policy / Advocacy" id="policy">
+    <label for="policy">Policy / Advocacy</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Finance / Legal" id="finance">
+    <label for="finance">Finance / Legal</label>
+  </div>
+  <div class="checkbox-row">
+    <input type="checkbox" name="interest_area" value="Other" id="other">
+    <label for="other">Other</label>
+    <input type="text" name="interest_area_other" id="other-text" placeholder="Please specify" style="display: none;">
   </div>
 </div>
 <br><br>
@@ -104,11 +119,11 @@
   <a href="privacy.html">Privacy Policy</a>
 </footer>
 <script>
-  const otherCheckbox = document.getElementById('other-checkbox');
+  const otherCheckbox = document.getElementById('other');
   const otherText = document.getElementById('other-text');
 
   otherCheckbox.addEventListener('change', () => {
-    otherText.style.display = otherCheckbox.checked ? 'inline-block' : 'none';
+    otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
   });
 </script>
 </body>
