@@ -116,14 +116,15 @@ form button:hover {
 }
 .checkbox-group {
   margin-bottom: 1.5rem;
-  padding-left: 1rem;
 }
 
-.checkbox-group div {
+.checkbox-row {
+  display: flex;
+  align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.checkbox-group input[type="checkbox"] {
-  margin-right: 0.5rem;
-  vertical-align: middle;
+.checkbox-row label {
+  margin-left: 0.5rem;
+  font-weight: normal;
 }
