@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9eb5a5e4ef548b54",
+        "id": "b09498609fdead38",
         "type": "tabs",
         "children": [
           {
-            "id": "ddc0e4d86ed5758d",
+            "id": "794a6e8ec08b2d39",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Landing Page Notes.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Landing Page Notes"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bb465b5cfc9c6492",
@@ -95,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Landing Page Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Landing Page Notes"
+              "title": "Backlinks"
             }
           },
           {
@@ -143,21 +137,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Landing Page Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Landing Page Notes"
+              "title": "Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,8 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ddc0e4d86ed5758d",
+  "active": "fdf49a8ff933b4d9",
   "lastOpenFiles": [
+    "2025-03-27.md",
+    "Landing Page Notes.md",
     "privacy-es.html",
     "privacy.html",
     "assets/images/favicon.png",
@@ -179,7 +174,6 @@
     "assets/images/placeholder.txt",
     "assets/images/logo1.png",
     "assets/images",
-    "assets",
-    "Landing Page Notes.md"
+    "assets"
   ]
 }
