@@ -185,7 +185,7 @@ input[type="checkbox"][value="Other"]:checked ~ input[type="text"] {
 
 /* Survey image container */
 .survey-image-container {
-   max-width: 600px;  /* Increased from 300px */
+   max-width: 800px;  /* Increased from 300px */
   margin: 1.5rem auto;  /* Slightly more vertical space */
 }
 .survey-image {
