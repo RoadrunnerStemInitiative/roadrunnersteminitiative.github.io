@@ -185,12 +185,19 @@ input[type="checkbox"][value="Other"]:checked ~ input[type="text"] {
 
 /* Survey image container */
 .survey-image-container {
-  max-width: 600px;
-  margin: 1rem auto;
+   max-width: 600px;  /* Increased from 300px */
+  margin: 1.5rem auto;  /* Slightly more vertical space */
 }
 .survey-image {
   width: 100%;
   height: auto;
   border: 1px solid #eee;
   border-radius: 8px;
+  /* Add these new properties: */
+  box-shadow: 0 2px 6px rgba(0,107,92,0.1);  /* Brand-color subtle shadow */
+  transition: transform 0.2s ease;  /* Interactive hover effect */
+}
+
+.survey-image:hover {
+  transform: scale(1.01);  /* Tiny zoom on hover */
 }
