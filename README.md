@@ -59,7 +59,7 @@ Interested in helping us improve or expand the site? We welcome collaborators wh
 
 Got questions, want to collaborate, or just want to say hi?
 
-📧 Email us: [roadrunnersteminitiative@gmail.com](mailto:roadrunnersteminitiative@gmail.com)  
+📧 Email us: [roadrunnersteminitiative@gmail.com](mailto:contact@roadrunnersteminitiative.org)  
 🔗 Board/volunteer interest: [Board Interest Form](https://www.roadrunnersteminitiative.org/board-interest.html)
 
 ---
