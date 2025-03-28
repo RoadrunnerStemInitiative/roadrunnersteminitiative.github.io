@@ -1,3 +1,4 @@
+/* Main site styles */
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Header styles */
 header {
   background: #00695c;
   color: white;
@@ -13,12 +15,14 @@ header {
   text-align: center;
 }
 
+/* Main content container */
 main {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
 }
 
+/* Section card styling */
 .aboutus-section,
 .missionvision-section,
 .boardrecruit-section,
@@ -32,6 +36,7 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Button styles */
 .button {
   display: inline-block;
   background: #00695c;
@@ -42,11 +47,11 @@ main {
   font-weight: bold;
   transition: background 0.3s ease;
 }
-
 .button:hover {
   background: #004d40;
 }
 
+/* Footer styles */
 footer {
   text-align: center;
   padding: 1rem;
@@ -54,28 +59,27 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Mission/Vision flex layout */
 .missionvision-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
-
 .missionvision-section > div {
   flex: 1;
   min-width: 280px;
 }
 
+/* Form elements */
 form {
   display: flex;
   flex-direction: column;
 }
-
 form label {
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
 }
-
 form input,
 form select,
 form textarea {
@@ -87,7 +91,6 @@ form textarea {
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
 }
-
 form button {
   align-self: flex-start;
   background-color: #00695c;
@@ -98,50 +101,43 @@ form button {
   font-size: 1rem;
   cursor: pointer;
 }
-
 form button:hover {
   background-color: #004d40;
 }
+
+/* Language switcher */
 .language-switch {
   text-align: right;
   margin-top: -1rem;
   margin-right: 1rem;
   font-size: 0.9rem;
 }
-
 .language-switch a {
   color: white;
   text-decoration: underline;
   margin-left: 0.5rem;
 }
-/* Checkbox Group Styling */
+
+/* Checkbox group components */
 .checkbox-group {
   margin-bottom: 1.5rem;
 }
-
-/* Each checkbox row - aligns items horizontally */
 .checkbox-row {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
-
-/* Checkbox styling - ensures alignment */
 .checkbox-row input[type="checkbox"] {
   margin: 0;
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
 }
-
-/* Label styling - ensures text stays right */
 .checkbox-row label {
   margin: 0;
   font-weight: normal;
 }
-
-/* "Other" text input - only shows when checkbox is checked */
 .checkbox-row input[type="text"] {
   margin-left: 0.5rem;
   padding: 0.5rem;
@@ -149,47 +145,52 @@ form button:hover {
   max-width: 200px;
   display: none;
 }
-
-/* Show "Other" text input when checkbox is checked */
 input[type="checkbox"][value="Other"]:checked ~ input[type="text"] {
   display: block;
 }
-/* Privacy Policy Specific Styles */
+
+/* Privacy policy page */
 .privacy-policy {
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
 }
-
 .privacy-policy h1 {
   color: #00695c;
   margin-bottom: 0.5rem;
 }
-
 .effective-date {
   color: #666;
   margin-bottom: 2rem;
 }
-
 .privacy-policy h2 {
   color: #004d40;
   margin-top: 2rem;
   border-bottom: 1px solid #eee;
   padding-bottom: 0.5rem;
 }
-
 .privacy-list {
   line-height: 1.6;
   padding-left: 1.5rem;
 }
-
 .privacy-list li {
   margin-bottom: 0.5rem;
 }
-
 .contact-section {
   background: #f8f9fa;
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 2rem;
+}
+
+/* Survey image container */
+.survey-image-container {
+  max-width: 300px;
+  margin: 1rem auto;
+}
+.survey-image {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
 }
