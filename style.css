@@ -231,3 +231,23 @@ input[type="checkbox"][value="Other"]:checked ~ input[type="text"] {
   font-weight: bold;
   cursor: pointer;
 }
+
+button.button {
+  background-color: #00695c;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.button:hover {
+  background-color: #004d40;
+}
+button {
+  font-family: 'Lato', sans-serif;
+}
