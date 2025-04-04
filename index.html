@@ -69,16 +69,48 @@
 
     <section class="contactus-section">
   <h2>Be Part of the Conversation</h2>
-  <p>
-    Reach out to learn more, collaborate, or support STEM learning in Doña Ana County.
-  </p>
-  <a href="mailto:contact@roadrunnersteminitiative.org" class="button">Email Us</a>
+  <p>Reach out to learn more, collaborate, or support STEM learning in Doña Ana County.</p>
+  <button class="button" onclick="openContactModal()">Contact Us</button>
 </section>
+
+<!-- Modal Shell -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeContactModal()">&times;</span>
+    <div id="contactFormContainer">Loading...</div>
+  </div>
+</div>
+
   </main>
 
   <footer>
   &copy; 2025 Roadrunner STEM Initiative · Las Cruces, NM<br>
   <a href="privacy.html">Privacy Policy</a>
 </footer>
+<script>
+  function openContactModal() {
+    const modal = document.getElementById('contactModal');
+    const container = document.getElementById('contactFormContainer');
+
+    modal.style.display = 'block';
+
+    // Load form only once
+    if (!container.dataset.loaded) {
+      fetch('contact-form.html')
+        .then(response => response.text())
+        .then(html => {
+          container.innerHTML = html;
+          container.dataset.loaded = "true";
+        })
+        .catch(err => {
+          container.innerHTML = '<p>Failed to load contact form. Please try again later.</p>';
+        });
+    }
+  }
+
+  function closeContactModal() {
+    document.getElementById('contactModal').style.display = 'none';
+  }
+</script>
 </body>
 </html>
