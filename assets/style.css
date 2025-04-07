@@ -1,254 +1,54 @@
-/* Main site styles */
-body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f5f5f5;
-  color: #333;
+:root {
+  --primary: #355e3b;
+  --accent: #93032e;
+  --secondary: #7de2d1;
+  --soft: #c69f89;
+  --muted: #a6a15e;
+  --text-color: #333;
+  --bg-light: #f5f5f5;
+  --white: #ffffff;
 }
-
-/* Header styles */
 header {
-  background: #00695c;
-  color: white;
+  background: var(--primary);
+  color: var(--white);
   padding: 2rem;
   text-align: center;
 }
-
-/* Main content container */
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+.button {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border: 2px solid transparent;
 }
-
-/* Section card styling */
+.button:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+form button {
+  background-color: var(--primary);
+}
+form button:hover {
+  background-color: var(--accent);
+}
+.privacy-policy h1 {
+  color: var(--primary);
+}
+.privacy-policy h2 {
+  color: var(--accent);
+}
+.modal-content,
 .aboutus-section,
 .missionvision-section,
 .boardrecruit-section,
 .survey-section,
 .contactus-section,
 .interestform-section {
-  background: white;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 12px;
+  background: var(--white);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Button styles */
-.button {
-  display: inline-block;
-  background: #00695c;
-  color: white;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-.button:hover {
-  background: #004d40;
-}
-
-/* Footer styles */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eee;
-  font-size: 0.9rem;
-}
-
-/* Mission/Vision flex layout */
-.missionvision-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.missionvision-section > div {
-  flex: 1;
-  min-width: 280px;
-}
-
-/* Form elements */
-form {
-  display: flex;
-  flex-direction: column;
-}
-form label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-family: 'Lato', sans-serif;
-}
-form button {
-  align-self: flex-start;
-  background-color: #00695c;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-form button:hover {
-  background-color: #004d40;
-}
-
-/* Language switcher */
-.language-switch {
-  text-align: right;
-  margin-top: -1rem;
-  margin-right: 1rem;
-  font-size: 0.9rem;
-}
-.language-switch a {
-  color: white;
-  text-decoration: underline;
-  margin-left: 0.5rem;
-}
-
-/* Checkbox group components */
-.checkbox-group {
-  margin-bottom: 1.5rem;
-}
-.checkbox-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.checkbox-row input[type="checkbox"] {
-  margin: 0;
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
-}
-.checkbox-row label {
-  margin: 0;
-  font-weight: normal;
-}
-.checkbox-row input[type="text"] {
-  margin-left: 0.5rem;
-  padding: 0.5rem;
-  flex: 1;
-  max-width: 200px;
-  display: none;
-}
-input[type="checkbox"][value="Other"]:checked ~ input[type="text"] {
-  display: block;
-}
-
-/* Privacy policy page */
-.privacy-policy {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-}
-.privacy-policy h1 {
-  color: #00695c;
-  margin-bottom: 0.5rem;
-}
-.effective-date {
-  color: #666;
-  margin-bottom: 2rem;
-}
-.privacy-policy h2 {
-  color: #004d40;
-  margin-top: 2rem;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.5rem;
-}
-.privacy-list {
-  line-height: 1.6;
-  padding-left: 1.5rem;
-}
-.privacy-list li {
-  margin-bottom: 0.5rem;
-}
-.contact-section {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-top: 2rem;
-}
-
-/* Survey image container */
-.survey-image-container {
-  width: min(1200px, 100% - 2rem); /* Caps width + mobile padding */
-  margin: 2.5rem auto;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 
-    0 6px 20px rgba(0, 107, 92, 0.12),
-    0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-.survey-image {
-  border-radius: 10px;
-  border: 1px solid #e0f2f1;
-  aspect-ratio: 1545/983; /* Prevents layout shift */
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-  background-color: white;
-  margin: 10% auto;
-  padding: 2rem;
-  border: 1px solid #888;
-  width: 90%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-}
-
-.close-button {
-  color: #aaa;
-  float: right;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.button {
-  background-color: transparent;
-  color: #00695c;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid #00695c;
-  border-radius: 8px;
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  background-color: #00695c;
-  color: white;
-}
-button {
-  font-family: 'Lato', sans-serif;
+  border-left: 6px solid var(--primary); /* subtle brand stripe */
 }
