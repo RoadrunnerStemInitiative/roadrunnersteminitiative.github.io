@@ -1,16 +1,15 @@
 [build]
+  command = "npx @11ty/eleventy"
   publish = "_site"
-  command = "bundle exec jekyll build"
 
-[[edge_functions]]
-  function = "geo-block"  # Name of your Edge Function file (without .js)
-  path = "/*"            # Applies to all routes
+[dev]
+  command = "npx @11ty/eleventy --serve"
 
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
