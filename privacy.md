@@ -2,12 +2,6 @@
 layout: layout.njk
 title: Privacy Policy
 ---
-
-<section class="privacy-policy">
-  <h2>Privacy Policy</h2>
-  <p class="effective-date"><strong>Effective Date:</strong> March 26, 2025</p>
-</section>
-  
       <section>
         <h2>Introduction</h2>
         <p>Roadrunner STEM Initiative ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you interact with our services.</p>
@@ -67,11 +61,3 @@ title: Privacy Policy
         <a href="mailto:contact@roadrunnersteminitiative.org" class="button">Email Our Privacy Team</a>
         </section>
     </article>
-  </main>
-  <footer>
-    &copy; 2025 Roadrunner STEM Initiative· Las Cruces, NM<br>
-    <a href="index.html">Return to Main</a> | 
-    <a href="privacy-es.html">Ver en Español</a>
-  </footer>
-</body>
-</html>
