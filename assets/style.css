@@ -52,3 +52,39 @@ form button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-left: 6px solid var(--primary); /* subtle brand stripe */
 }
+a {
+  color: #355e3b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #93032e;
+}
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #355e3b;
+  border-bottom: 2px solid #a6a15e;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.button {
+  background-color: #355e3b;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #93032e;
+}
