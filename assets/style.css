@@ -2,7 +2,7 @@
   --primary: #355e3b;      /* Forest Green - Brand identity */
   --accent: #7de2d1;       /* Mint Aqua - Fresh contrast for hovers/buttons */
   --highlight: #93032e;    /* Cranberry Red - Bold CTA, hover accents */
-  --soft: #c69f89;         /* Blush/Tan - Gentle highlight (backgrounds, cards) */
+  --soft: #c69f89;         /* Tan - Gentle highlight (backgrounds, cards) */
   --muted: #a6a15e;        /* Mustard Olive - For section dividers / subtle accents */
   --text-color: #333333;   /* Default dark text */
   --bg-light: #f2f2f0;     /* gentle gray tint */
@@ -12,7 +12,7 @@
 /* Main background and text */
 body {
   font-family: 'Lato', sans-serif;
-  background-color: var(--bg-light);
+  background-color: var(--soft);
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -41,7 +41,7 @@ header {
 }
 
 .button:hover {
-  background: var(--highlight);
+  background: var(--muted);
   border-color: var(--accent);
 }
 
@@ -57,7 +57,7 @@ form button {
 }
 
 form button:hover {
-  background-color: var(--highlight);
+  background-color: var(--muted);
 }
 
 /* Section Styling */
@@ -72,8 +72,8 @@ form button:hover {
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-left: 6px solid var(--primary); /* Visual brand stripe */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-left: 8px solid var(--primary); /* Visual brand stripe */
 }
 
 /* Headings */
