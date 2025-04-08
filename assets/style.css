@@ -1,90 +1,120 @@
 :root {
-  --primary: #355e3b;    /* Dark Green (Forest Green) */
-  --accent: #93032e;     /* Deep Red (Cranberry / Burgundy) */
-  --secondary: #7de2d1;  /* Soft Teal (Mint Aqua) */
-  --soft: #c69f89;       /* Warm Beige (Light Tan / Blush) */
-  --muted: #a6a15e;      /* Olive Gold (Muted Mustard) */
-  --text-color: #333;    /* Dark Gray (Almost Black) */
-  --bg-light: #f5f5f5;   /* Very Light Gray (Paper White) */
-  --white: #ffffff;      /* Pure White */
+  --primary: #355e3b;      /* Forest Green - Brand identity */
+  --accent: #7de2d1;       /* Mint Aqua - Fresh contrast for hovers/buttons */
+  --highlight: #93032e;    /* Cranberry Red - Bold CTA, hover accents */
+  --soft: #c69f89;         /* Blush/Tan - Gentle highlight (backgrounds, cards) */
+  --muted: #a6a15e;        /* Mustard Olive - For section dividers / subtle accents */
+  --text-color: #333333;   /* Default dark text */
+  --bg-light: #f5f5f5;     /* Off-white background */
+  --white: #ffffff;        /* Clean white */
 }
+
+/* Main background and text */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
 header {
   background: var(--primary);
   color: var(--white);
   padding: 2rem;
   text-align: center;
 }
+
+/* Buttons */
 .button {
   display: inline-block;
   background: var(--primary);
   color: var(--white);
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, border 0.3s ease;
   border: 2px solid transparent;
+  cursor: pointer;
 }
+
 .button:hover {
-  background: var(--secondary);
+  background: var(--highlight);
   border-color: var(--accent);
 }
+
+/* Forms */
 form button {
   background-color: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
 }
+
 form button:hover {
-  background-color: var(--accent);
+  background-color: var(--highlight);
 }
-.privacy-policy h1 {
-  color: var(--primary);
-}
-.privacy-policy h2 {
-  color: var(--accent);
-}
-.modal-content,
+
+/* Section Styling */
 .aboutus-section,
 .missionvision-section,
 .boardrecruit-section,
 .survey-section,
 .contactus-section,
-.interestform-section {
+.interestform-section,
+.modal-content {
   background: var(--white);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-left: 6px solid var(--primary); /* subtle brand stripe */
+  border-left: 6px solid var(--primary); /* Visual brand stripe */
 }
+
+/* Headings */
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--muted);
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Links */
 a {
-  color: #355e3b;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 600;
 }
 
 a:hover {
+  color: var(--highlight);
   text-decoration: underline;
-  color: #93032e;
-}
-h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: #355e3b;
-  border-bottom: 2px solid #a6a15e;
-  padding-bottom: 0.5rem;
 }
 
-p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-.button {
-  background-color: #355e3b;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  color: white;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-  cursor: pointer;
+/* Modal (reused class) */
+.modal-content {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
-.button:hover {
-  background-color: #93032e;
+/* Privacy Page Styling */
+.privacy-policy h1 {
+  color: var(--primary);
+}
+.privacy-policy h2 {
+  color: var(--highlight);
 }

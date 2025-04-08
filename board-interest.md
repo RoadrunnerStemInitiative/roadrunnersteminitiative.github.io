@@ -2,22 +2,6 @@
 layout: layout.njk
 title: Board Interest
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Board Interest – Roadrunner STEM Initiative</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Roadrunner STEM Initiative</h1>
-    <p>Empower • Educate • Elevate — Digitally</p>
-  </header>
-
   <main>
     <section class="interestform-section">
       <h2>Board of Directors Interest Form</h2>
@@ -117,21 +101,4 @@ title: Board Interest
         <button type="submit" class="button">Submit Interest</button>
       </form>
     </section>
-  </main>
 
-  <footer>
-    &copy; 2025 Roadrunner STEM Initiative · Las Cruces, NM<br>
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="index.html">Return to Main</a>  
-  </footer>
-
-  <script>
-    const otherCheckbox = document.getElementById('other');
-    const otherText = document.getElementById('other-text');
-
-    otherCheckbox.addEventListener('change', () => {
-      otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
-    });
-  </script>
-</body>
-</html>
