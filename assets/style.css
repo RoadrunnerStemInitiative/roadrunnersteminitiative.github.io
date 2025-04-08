@@ -1,9 +1,9 @@
 :root {
-  --primary: #355e3b;      /* Forest Green - Brand identity */
+  --primary: #355e3b;      /* Hunter Green - Brand identity */
   --accent: #7de2d1;       /* Mint Aqua - Fresh contrast for hovers/buttons */
   --highlight: #93032e;    /* Cranberry Red - Bold CTA, hover accents */
-  --soft: #c69f89;         /* Tan - Gentle highlight (backgrounds, cards) */
-  --muted: #a6a15e;        /* Mustard Olive - For section dividers / subtle accents */
+  --soft: #c69f89;         /* Tan - Gentle highlight */
+  --muted: #a6a15e;        /* Mustard Olive - section dividers / subtle accents */
   --text-color: #333333;   /* Default dark text */
   --bg-light: #f2f2f0;     /* gentle gray tint */
   --white: #ffffff;        /* Clean white */
@@ -22,7 +22,7 @@ body {
 header {
   background: var(--primary);
   color: var(--white);
-  padding: 2rem;
+  padding: .75rem;
   text-align: center;
 }
 
@@ -67,6 +67,7 @@ form button:hover {
 .survey-section,
 .contactus-section,
 .interestform-section,
+.privacy-section,
 .modal-content {
   background: var(--white);
   padding: 2rem;
