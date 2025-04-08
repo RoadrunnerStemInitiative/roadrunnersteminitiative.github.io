@@ -1,12 +1,12 @@
 :root {
-  --primary: #355e3b;
-  --accent: #93032e;
-  --secondary: #7de2d1;
-  --soft: #c69f89;
-  --muted: #a6a15e;
-  --text-color: #333;
-  --bg-light: #f5f5f5;
-  --white: #ffffff;
+  --primary: #355e3b;    /* Dark Green (Forest Green) */
+  --accent: #93032e;     /* Deep Red (Cranberry / Burgundy) */
+  --secondary: #7de2d1;  /* Soft Teal (Mint Aqua) */
+  --soft: #c69f89;       /* Warm Beige (Light Tan / Blush) */
+  --muted: #a6a15e;      /* Olive Gold (Muted Mustard) */
+  --text-color: #333;    /* Dark Gray (Almost Black) */
+  --bg-light: #f5f5f5;   /* Very Light Gray (Paper White) */
+  --white: #ffffff;      /* Pure White */
 }
 header {
   background: var(--primary);
@@ -26,7 +26,7 @@ header {
   border: 2px solid transparent;
 }
 .button:hover {
-  background: var(--accent);
+  background: var(--secondary);
   border-color: var(--accent);
 }
 form button {
