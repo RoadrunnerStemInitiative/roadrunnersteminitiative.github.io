@@ -31,7 +31,9 @@ title: Home
   <p>
     We're seeking dedicated community leaders and changemakers to join our Board of Directors and help launch impactful STEM programs in 2025. Let’s work together to build a stronger, more connected digital future for Doña Ana County.
   </p>
-  <a href="/board-interest.html" class="button">Express Interest</a>
+  <a href="/executive-board.html" class="button">Board Info</a>
+<a href="/board-interest.html" class="button" style="margin-left: 1rem;">Submit Interest Form</a>
+
 </section>
 
 <section class="survey-section">
