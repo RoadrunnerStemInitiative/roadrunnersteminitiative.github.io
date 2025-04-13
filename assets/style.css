@@ -128,3 +128,10 @@ a:hover {
 .privacy-list li {
   margin-bottom: 0.5rem;
 }
+.survey-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #e0f2f1;
+  aspect-ratio: 1545/983;
+}
