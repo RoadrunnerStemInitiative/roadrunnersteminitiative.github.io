@@ -130,7 +130,7 @@ a:hover {
 }
 .survey-image {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   border-radius: 10px;
   border: 1px solid #e0f2f1;
   aspect-ratio: 1545/983;
