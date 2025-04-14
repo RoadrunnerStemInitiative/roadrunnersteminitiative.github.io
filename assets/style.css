@@ -1,10 +1,10 @@
 :root {
-  --primary: #355e3b;      /* Hunter Green - Brand identity */
-  --accent: #93032e;       /* Mint Aqua - Fresh contrast for hovers/buttons */
-  --highlight: #7de2d1;    /* Cranberry Red - Bold CTA, hover accents */
-  --soft: #c69f89;         /* Tan - Gentle highlight */
-  --muted: #a6a15e;        /* Mustard Olive - section dividers / subtle accents */
-  --text-color: #333333;   /* Default dark text */
+  --primary: #355e3b;      /* Hunter Green */
+  --accent: #4381c1;       /* Steel Blue */
+  --highlight: #412234;    /* Dark purple */
+  --soft: #a77464;         /* Brown sugar */
+  --muted: #d2d6ef;        /* Lavender */
+  --text-color: #333333;   /* Jet black */
   --bg-light: #f5f5f5;     /* gentle gray tint */
   --white: #ffffff;        /* Clean white */
 }
