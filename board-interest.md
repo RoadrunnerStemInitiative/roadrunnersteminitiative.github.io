@@ -116,7 +116,6 @@ title: Board Interest
 <label>Resume Link (optional):<br>
   <input type="url" name="resume_link" placeholder="Google Drive, Dropbox, etc.">
 </label>
-<br>
 
 <div class="resume-email-note">
   <p>If you'd prefer to email your resume directly, please send it to:</p>

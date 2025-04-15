@@ -46,5 +46,5 @@ title: Privacy Policy
 
 <h2>7. Contact Us</h2>
     <p>For privacy-related questions:</p>
-      <a href="mailto:contact@roadrunnersteminitiative.org" class="button">Email Our Privacy Team</a>
+      <a href="mailto:privacyteam@roadrunnersteminitiative.org" class="button">Email Our Privacy Team</a>
 </section>

@@ -272,13 +272,23 @@ form label {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 300px;
+  width: 320px;
   height: 100%;
   background-color: var(--white);
   box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  padding: 2rem 1rem;
   transition: left 0.4s ease;
   z-index: 9999;
+  
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;     
+}
+
+@media (max-height: 500px) {
+  .contact-panel {
+    padding-bottom: 4rem;  /* Give room for bottom content */
+  }
 }
 
 .contact-panel.active {
@@ -304,4 +314,17 @@ form label {
   border: 1px solid var(--muted);
   border-radius: 6px;
   font-size: 1rem;
+}
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 480px) {
+  .button-group {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
