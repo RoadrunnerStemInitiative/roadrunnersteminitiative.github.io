@@ -49,5 +49,5 @@ title: Home
   <p>
     Reach out to learn more, collaborate, or support STEM learning in Doña Ana County.
   </p>
-  <a href="/contact-form.html" class="button">Contact Us</a>
+  <button id="contactToggle" class="button">Contact Us</button>
 </section>
