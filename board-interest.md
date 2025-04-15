@@ -6,8 +6,15 @@ title: Board Interest
     <section class="interestform-section">
       <h2>Board of Directors Interest Form</h2>
 
+<form name="board-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="board-interest">
+  <p hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
+
       <form name="board-interest" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="board-interest">
+
 
         <label>Full Name:<br>
           <input type="text" name="name" placeholder="John Doe" required>
@@ -91,8 +98,10 @@ title: Board Interest
           <input type="url" name="resume_link" placeholder="Google Drive, Dropbox, etc.">
         </label><br><br>
 
-<p>If you'd rather email your resume directly, please send it to <a href="mailto:roadrunnersteminitiative+resume@gmail.com">roadrunnersteminitiative+resume@gmail.com</a>.</p>
-<br>
+<div class="resume-email-note">
+  <p>If you'd prefer to email your resume directly, please send it to:</p>
+  <a href="mailto:roadrunnersteminitiative+resume@gmail.com" class="button" style="margin-top: 0.5rem;">Email Resume</a>
+</div>
 
         <label>Demographics (optional):<br>
           <textarea name="demographics" placeholder="Share anything you’d like us to know (race/ethnicity, gender identity, etc.)"></textarea>
