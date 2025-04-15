@@ -12,9 +12,6 @@ title: Board Interest
     <label>Don’t fill this out if you're human: <input name="bot-field"></label>
     </p>
 
-<form name="board-interest" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="board-interest">
-
 <label>Full Name:<br>
   <input type="text" name="name" placeholder="John Doe" required>
 </label>
@@ -138,10 +135,14 @@ title: Board Interest
   </section>
 
 <script>
-  const otherCheckbox = document.getElementById('other');
-  const otherText = document.getElementById('other-text');
+   document.addEventListener('DOMContentLoaded', () => {
+    const otherCheckbox = document.getElementById('other');
+    const otherText = document.getElementById('other-text');
 
-  otherCheckbox.addEventListener('change', () => {
-    otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
+    if (otherCheckbox && otherText) {
+      otherCheckbox.addEventListener('change', () => {
+        otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
+  });
+    }
   });
 </script>
