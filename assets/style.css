@@ -12,7 +12,11 @@
 /* Main background and text */
 body {
   font-family: 'Lato', sans-serif;
-  background-color: var(--soft);
+  background-image: url('/assets/images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--text-color);
   margin: 0;
   padding: 0;

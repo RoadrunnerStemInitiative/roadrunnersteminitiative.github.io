@@ -6,7 +6,7 @@ title: Home
 <section class="aboutus-section">
   <h2>About Us</h2>
   <p>
-    We are a nonprofit in the early stages of building out digital literacy and STEM education programs for underserved students in Doña Ana County. Our goal is to grow a strong network of workshops, camps, and community programs that teach coding, robotics, cybersecurity, and more. We're currently recruiting volunteers, board members, and partners to help launch and shape our vision.
+    Roadrunner STEM Initiative is a new nonprofit focused on providing digital literacy and STEM education in Doña Ana County. We offer programs for students, parents, and seniors to build essential technology skills and bridge the digital divide. Our goal is to grow a strong network of workshops, camps, and community programs that teach coding, robotics, cybersecurity, and more. We're currently recruiting volunteers, board members, and partners to help launch and shape our vision.
   </p>
 </section>
 
