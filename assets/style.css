@@ -38,7 +38,6 @@ header {
 footer {
   text-align: center;
   padding: 1rem;
-  background: var(--primary); /* or your preferred footer bg */
   font-size: 0.9rem;
   color: white;
   text-shadow: -1px -1px 0 #000,
