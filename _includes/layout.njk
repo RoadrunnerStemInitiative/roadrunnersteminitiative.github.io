@@ -23,14 +23,35 @@
   document.addEventListener('DOMContentLoaded', () => {
     const contactToggle = document.getElementById('contactToggle');
     const contactPanel = document.getElementById('contactPanel');
+    const closeBtn = document.querySelector('.contact-panel .close-btn');
 
+    // Toggle open
     if (contactToggle && contactPanel) {
       contactToggle.addEventListener('click', () => {
-        contactPanel.classList.toggle('active');
+        contactPanel.classList.add('active');
       });
     }
+
+    // Close on ✕ button
+    if (closeBtn && contactPanel) {
+      closeBtn.addEventListener('click', () => {
+        contactPanel.classList.remove('active');
+      });
+    }
+
+    // Optional: Close on outside click
+    document.addEventListener('click', (event) => {
+      if (
+        contactPanel.classList.contains('active') &&
+        !contactPanel.contains(event.target) &&
+        event.target.id !== 'contactToggle'
+      ) {
+        contactPanel.classList.remove('active');
+      }
+    });
   });
 </script>
+
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
