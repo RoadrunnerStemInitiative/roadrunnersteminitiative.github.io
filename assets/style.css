@@ -219,12 +219,19 @@ select:focus {
   outline: none;
 }
 
+form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
 form label {
   display: block;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--primary);
 }
+
 .resume-email-note {
   background-color: var(--muted);
   padding: 1rem 1.5rem;
@@ -233,4 +240,9 @@ form label {
   color: var(--text-color);
   font-size: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.interestform-section {
+  padding: 2rem;
+  box-sizing: border-box;
 }
