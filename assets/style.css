@@ -32,7 +32,7 @@ main {
 header {
   background: var(--primary);
   color: var(--white);
-  padding: .75rem;
+  padding: .5rem;
   text-align: center;
 }
 footer {
