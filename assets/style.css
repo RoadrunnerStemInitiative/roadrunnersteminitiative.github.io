@@ -103,7 +103,7 @@ form button:hover {
 .privacy-section,
 .modal-content {
   background: var(--white);
-  opacity: 0.9;
+  opacity: 0.95;
   padding: 2rem 2rem;
   margin-bottom: 2rem;
   border-radius: 12px;
@@ -176,18 +176,18 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-.survey-image {
+/* .survey-image {
   display: block;
   margin: 0 auto 2rem auto;
   border-radius: 10px;
   border: 1px solid #e0f2f1;
   aspect-ratio: 1545/983;
-}
+} */
 
 .orgchart-image {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
-  border-radius: 8px;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
 }
