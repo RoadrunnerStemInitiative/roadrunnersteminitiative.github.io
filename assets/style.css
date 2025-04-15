@@ -103,7 +103,7 @@ form button:hover {
 .privacy-section,
 .modal-content {
   background: var(--white);
-  opacity: 0.95;
+  opacity: 0.8;
   padding: 2rem 2rem;
   margin-bottom: 2rem;
   border-radius: 12px;
