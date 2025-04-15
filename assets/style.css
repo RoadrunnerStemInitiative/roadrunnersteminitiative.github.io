@@ -60,6 +60,17 @@ footer {
                1px  1px 0 #000;
 }
 
+.footer-privacy-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+.footer-privacy-link:hover {
+  text-decoration: underline;
+}
+
 /* Buttons */
 .button {
   display: inline-block;

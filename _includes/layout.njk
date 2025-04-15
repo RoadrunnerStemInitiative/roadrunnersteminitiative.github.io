@@ -18,11 +18,20 @@
       {{ content | safe }}
     </main>
   {% include "_includes/footer.njk" %}
+
   <script>
   const toggleContact = () => {
-    document.getElementById('contactPanel').classList.toggle('active');
+    document.getElementById('contactPanel')?.classList.toggle('active');
   };
-  document.getElementById('contactToggle').addEventListener('click', toggleContact);
+  document.getElementById('contactToggle')?.addEventListener('click', toggleContact);
+</script>
+<script>
+  const roleSelect = document.getElementById('community-role');
+  const otherField = document.getElementById('community-other-container');
+
+  roleSelect?.addEventListener('change', () => {
+    otherField.style.display = roleSelect.value === 'Other' ? 'block' : 'none';
+  });
 </script>
 
 </body>
