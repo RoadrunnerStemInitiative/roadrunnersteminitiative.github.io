@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title | default("Roadrunner STEM Initiative") }}</title>
+
+
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  {% include "_includes/header.njk" %}
+    <main>
+      {{ content | safe }}
+    </main>
+  {% include "_includes/footer.njk" %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const contactToggle = document.getElementById('contactToggle');
+    const contactPanel = document.getElementById('contactPanel');
+    const closeBtn = document.querySelector('.contact-panel .close-btn');
+
+    // Toggle open
+    if (contactToggle && contactPanel) {
+      contactToggle.addEventListener('click', () => {
+        contactPanel.classList.add('active');
+      });
+    }
+
+    // Close on ✕ button
+    if (closeBtn && contactPanel) {
+      closeBtn.addEventListener('click', () => {
+        contactPanel.classList.remove('active');
+      });
+    }
+
+    // Optional: Close on outside click
+    document.addEventListener('click', (event) => {
+      if (
+        contactPanel.classList.contains('active') &&
+        !contactPanel.contains(event.target) &&
+        event.target.id !== 'contactToggle'
+      ) {
+        contactPanel.classList.remove('active');
+      }
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const roleSelect = document.getElementById('community-role');
+    const otherContainer = document.getElementById('community-other-container');
+
+    if (roleSelect && otherContainer) {
+      roleSelect.addEventListener('change', () => {
+        otherContainer.style.display = roleSelect.value === 'Other' ? 'block' : 'none';
+      });
+    }
+  });
+</script>
+
+{% include "_includes/contact-panel.njk" %}
+
+</body>
+
+</html>

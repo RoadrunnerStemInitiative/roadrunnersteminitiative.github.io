@@ -1,0 +1,330 @@
+:root {
+  --primary: #355e3b;      /* Hunter Green */
+  --accent: #4381c1;       /* Steel Blue */
+  --highlight: #412234;    /* Dark purple */
+  --soft: #a77464;         /* Brown sugar */
+  --muted: #d2d6ef;        /* Lavender */
+  --text-color: #333333;   /* Jet black */
+  --bg-light: #f5f5f5;     /* gentle gray tint */
+  --white: #ffffff;        /* Clean white */
+}
+html{
+  font-size: 18px;
+}
+
+/* Main background and text */
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url('/assets/images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: .5rem;
+  text-align: center;
+}
+
+header h1,
+header p {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: white;
+  text-shadow: -1px -1px 0 #000,
+               1px -1px 0 #000,
+              -1px  1px 0 #000,
+               1px  1px 0 #000;
+}
+
+.footer-privacy-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+.footer-privacy-link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--muted);
+  border-color: var(--accent);
+}
+
+/* Forms */
+form button {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--muted);
+}
+
+/* Section Styling */
+.aboutus-section,
+.missionvision-section,
+.boardrecruit-section,
+.support-section,
+.orgchart-section, 
+.survey-section,
+.contactus-section,
+.interestform-section,
+.privacy-section,
+.modal-content {
+  background: var(--white);
+  opacity: 0.85;
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-left: 8px solid var(--primary); /* Visual brand stripe */
+}
+
+
+nav a {
+  color: white;
+  font-weight: bold;
+   text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+/* Headings */
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--muted);
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+/* Modal (reused class) */
+.modal-content {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Privacy Page Styling */
+.privacy-policy h1 {
+  color: var(--primary);
+}
+
+.privacy-policy h2 {
+  color: var(--highlight);
+}
+
+.privacy-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.privacy-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* .survey-image {
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+  border: 1px solid #e0f2f1;
+  aspect-ratio: 1545/983;
+} */
+
+.orgchart-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+  padding: 1rem 1.25rem 1rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--muted);
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(67, 129, 193, 0.2);
+  outline: none;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.resume-email-note {
+  background-color: var(--muted);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  color: var(--text-color);
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.interestform-section {
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+#other-text {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid var(--muted);
+  border-radius: 8px;
+  background-color: #fff;
+  display: none;
+}
+.contact-panel {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 320px;
+  height: 100%;
+  background-color: var(--white);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  transition: left 0.4s ease;
+  z-index: 9999;
+  
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;     
+}
+
+@media (max-height: 500px) {
+  .contact-panel {
+    padding-bottom: 4rem;  /* Give room for bottom content */
+  }
+}
+
+.contact-panel.active {
+  left: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--accent);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.contact-panel input,
+.contact-panel textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 480px) {
+  .button-group {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
