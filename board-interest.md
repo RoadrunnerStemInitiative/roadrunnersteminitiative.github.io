@@ -36,7 +36,7 @@ title: Board Interest
   <br>
 
 <label>Community Role:<br>
-  <select name="community_role" required>
+  <select name="community_role" id="community-role" required>
     <option value="" disabled selected>Select an option</option>
     <option value="Parent or Guardian">Parent or Guardian</option>
     <option value="Educator (K–12 or Higher Ed)">Educator (K–12 or Higher Ed)</option>
@@ -49,8 +49,7 @@ title: Board Interest
 </label>
 
 <div id="community-other-container" style="display: none; margin-top: 1rem;">
-  <label>Please specify your role:<br>
-    <input type="text" name="community_role_other" id="community-other-text" placeholder="Tell us your role">
+  <input type="text" name="community_role_other" id="community-other-text" placeholder="Tell us your role">
   </label>
 </div>
 <br>
