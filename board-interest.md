@@ -45,6 +45,7 @@ title: Board Interest
     <option value="Nonprofit or Community Advocate">Nonprofit or Community Advocate</option>
     <option value="Student (High School or College)">Student (High School or College)</option>
     <option value="Other">Other</option>
+    <input type="text" name="interest_area_other" id="other-text" placeholder="Please specify" style="display: none;">
   </select>
 </label>
   <br>
@@ -120,17 +121,19 @@ title: Board Interest
   <p>If you'd prefer to email your resume directly, please send it to:</p>
   <a href="mailto:roadrunnersteminitiative+resume@gmail.com" class="button" style="margin-top: 0.5rem;">Email Resume</a>
 </div>
+<br>
 
 <label>Demographics (optional):<br>
   <textarea name="demographics" placeholder="Share anything you’d like us to know (race/ethnicity, gender identity, etc.)"></textarea>
-</label><br>
+</label>
+<br>
 
 <button type="submit" class="button">Submit Interest</button>
 
 </form>
   </section>
 
-  <script>
+<script>
   const otherCheckbox = document.getElementById('other');
   const otherText = document.getElementById('other-text');
 
