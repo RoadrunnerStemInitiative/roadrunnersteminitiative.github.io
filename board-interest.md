@@ -66,10 +66,11 @@ title: Board Interest
 
 <label>Interest Areas:</label>
   <div class="checkbox-group">
-    <div class="checkbox-row">
+    
+  <div class="checkbox-row">
       <label for="fundraising">Fundraising</label> 
         <input type="checkbox" name="interest_area" value="Fundraising" id="fundraising">
-    </div>
+  </div>
     
   <div class="checkbox-row">
     <label for="outreach">Community Outreach</label>
@@ -77,24 +78,24 @@ title: Board Interest
   </div>
   
   <div class="checkbox-row">
+    <label for="stem">STEM Education</label>
     <input type="checkbox" name="interest_area" value="STEM Education" id="stem">
-      <label for="stem">STEM Education</label>
   </div>
   
   <div class="checkbox-row">
+    <label for="policy">Policy / Advocacy</label>
     <input type="checkbox" name="interest_area" value="Policy / Advocacy" id="policy">
-      <label for="policy">Policy / Advocacy</label>
   </div>
   
   <div class="checkbox-row">
+    <label for="finance">Finance / Legal</label>
     <input type="checkbox" name="interest_area" value="Finance / Legal" id="finance">
-      <label for="finance">Finance / Legal</label>
   </div>
   
   <div class="checkbox-row">
+    <label for="other">Other</label>
     <input type="checkbox" name="interest_area" value="Other" id="other">
-        <label for="other">Other</label>
-          <input type="text" name="interest_area_other" id="other-text" placeholder="Please specify" style="display: none;">
+      <input type="text" name="interest_area_other" id="other-text" placeholder="Please specify" style="display: none;">
   </div>
   
   </div>
@@ -102,15 +103,18 @@ title: Board Interest
 
 <label>Why do you want to join the board?<br>
   <textarea name="motivation" placeholder="Why would you like to serve on the board?" rows="4" required></textarea>
-</label><br><br>
+</label>
+<br>
 
 <label>How many hours per month can you commit?<br>
   <input type="text" name="availability" placeholder="e.g., 5 hours/month">
-</label><br><br>
+</label>
+<br>
 
 <label>Resume Link (optional):<br>
   <input type="url" name="resume_link" placeholder="Google Drive, Dropbox, etc.">
-</label><br><br>
+</label>
+<br>
 
 <div class="resume-email-note">
   <p>If you'd prefer to email your resume directly, please send it to:</p>
@@ -119,9 +123,18 @@ title: Board Interest
 
 <label>Demographics (optional):<br>
   <textarea name="demographics" placeholder="Share anything you’d like us to know (race/ethnicity, gender identity, etc.)"></textarea>
-</label><br><br>
+</label><br>
 
 <button type="submit" class="button">Submit Interest</button>
 
 </form>
   </section>
+
+  <script>
+  const otherCheckbox = document.getElementById('other');
+  const otherText = document.getElementById('other-text');
+
+  otherCheckbox.addEventListener('change', () => {
+    otherText.style.display = otherCheckbox.checked ? 'block' : 'none';
+  });
+</script>
