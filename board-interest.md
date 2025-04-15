@@ -45,16 +45,15 @@ title: Board Interest
     <option value="Nonprofit or Community Advocate">Nonprofit or Community Advocate</option>
     <option value="Student (High School or College)">Student (High School or College)</option>
     <option value="Other">Other</option>
-    <input type="text" name="interest_area_other" id="other-text" placeholder="Please specify" style="display: none;">
   </select>
 </label>
+
 <div id="community-other-container" style="display: none; margin-top: 1rem;">
   <label>Please specify your role:<br>
     <input type="text" name="community_role_other" id="community-other-text" placeholder="Tell us your role">
   </label>
 </div>
-
-  <br>
+<br>
 
 <label>Pronouns (optional):<br>
   <input type="text" name="pronouns" placeholder="e.g. she/her, they/them">

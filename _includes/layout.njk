@@ -19,18 +19,25 @@
     </main>
   {% include "_includes/footer.njk" %}
 
-  <script>
-  const toggleContact = () => {
-    document.getElementById('contactPanel')?.classList.toggle('active');
-  };
-  document.getElementById('contactToggle')?.addEventListener('click', toggleContact);
-</script>
 <script>
-  const roleSelect = document.getElementById('community-role');
-  const otherField = document.getElementById('community-other-container');
+  document.addEventListener('DOMContentLoaded', () => {
+    const contactToggle = document.getElementById('contactToggle');
+    const contactPanel = document.getElementById('contactPanel');
 
-  roleSelect?.addEventListener('change', () => {
-    otherField.style.display = roleSelect.value === 'Other' ? 'block' : 'none';
+    if (contactToggle && contactPanel) {
+      contactToggle.addEventListener('click', () => {
+        contactPanel.classList.toggle('active');
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const roleSelect = document.getElementById('community-role');
+    const otherContainer = document.getElementById('community-other-container');
+
+    if (roleSelect && otherContainer) {
+      roleSelect.addEventListener('change', () => {
+        otherContainer.style.display = roleSelect.value === 'Other' ? 'block' : 'none';
   });
 </script>
 
