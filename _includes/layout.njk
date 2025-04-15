@@ -27,8 +27,10 @@
     if (contactToggle && contactPanel) {
       contactToggle.addEventListener('click', () => {
         contactPanel.classList.toggle('active');
+      });
+    }
+  });
 </script>
-
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -38,8 +40,11 @@
     if (roleSelect && otherContainer) {
       roleSelect.addEventListener('change', () => {
         otherContainer.style.display = roleSelect.value === 'Other' ? 'block' : 'none';
+      });
+    }
   });
 </script>
+
 
 </body>
 
