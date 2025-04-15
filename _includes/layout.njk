@@ -18,6 +18,13 @@
       {{ content | safe }}
     </main>
   {% include "_includes/footer.njk" %}
+  <script>
+  const toggleContact = () => {
+    document.getElementById('contactPanel').classList.toggle('active');
+  };
+  document.getElementById('contactToggle').addEventListener('click', toggleContact);
+</script>
+
 </body>
 
 </html>

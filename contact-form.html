@@ -1,7 +1,17 @@
-<form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact">
+<!-- Contact Button -->
+<button id="contactToggle" class="button">Contact Us</button>
 
-  <label>Name:<br>
+<!-- Slide-out Contact Panel -->
+<div id="contactPanel" class="contact-panel">
+  <button class="close-btn" onclick="toggleContact()">✕</button>
+  <h2>Contact Us</h2>
+  <p>Have a question, idea, or want to get involved?</p>
+ 
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+
+
+    <label>Name:<br>
     <input type="text" name="name" placeholder="Jane Doe" required>
   </label><br><br>
 
@@ -14,4 +24,5 @@
   </label><br><br>
 
   <button type="submit" class="button">Send</button>
-</form>
+  </form>
+</div>
