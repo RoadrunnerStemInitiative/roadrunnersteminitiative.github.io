@@ -3,11 +3,6 @@ layout: layout.njk
 title: Home
 ---
 
-<section class="home-page">
-    <h1>Welcome to Roadrunner STEM Initiative</h1>
-
-<p><strong>Empower. Educate. Elevate—Digitally.</strong></p>
-
 <section class="aboutus-section">
   <h2>About Us</h2>
     <p>
@@ -28,15 +23,19 @@ title: Home
       We envision Doña Ana County as a hub of STEM learning, where accessible, high-quality education empowers all community members to thrive in a technology-rich world.
     </p>
 </div>
-</section>
+<br>
 
-  <h2>Our Focus</h2>
+ <h2>Our Focus</h2>
     <ul>
   <li><strong>Digital Literacy Workshops</strong> for students and families</li>
   <li><strong>Coding & Robotics Programs</strong> for middle school students</li>
   <li><strong>Internet Safety Education</strong> for all ages</li>
   <li><strong>Accessible Technology Training</strong> for seniors and adults</li>
     </ul>
+
+</section>
+
+ 
 
 <section class="boardrecruit-section">
   <h2>Help Lead the Roadrunner STEM Initiative</h2>
@@ -57,13 +56,15 @@ title: Home
   <a href="https://bit.ly/STEMinDACounty" target="_blank" class="button">Take Survey</a>
 </section>
 
-<h2>Coming Soon</h2>
+
+
+<section class="contactus-section">
+  <h2>Coming Soon</h2>
   <ul>
     <li><strong>Pilot Programs</strong> - Fall 2025</li>
     <li><strong>Full Summer Camp</strong> - 2026</li>
   </ul>
-
-<section class="contactus-section">
+  <br>
   <h2>Be Part of the Conversation</h2>
     <p>
       Reach out to learn more, collaborate, or support STEM learning in Doña Ana County.
