@@ -1,0 +1,21 @@
+[build]
+  command = "npx @11ty/eleventy"
+  publish = "_site"
+
+[dev]
+  command = "npx @11ty/eleventy --serve"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = '''
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https:;
+      style-src 'self' 'unsafe-inline' https:;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https:;
+    '''
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"

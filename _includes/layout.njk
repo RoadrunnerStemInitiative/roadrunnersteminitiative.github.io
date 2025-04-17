@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+<!-- Basic SEO Meta Tags -->
+<meta name="description" content="Roadrunner STEM Initiative provides accessible digital literacy and STEM education programs in Doña Ana County, empowering students, families, and seniors with essential technology skills.">
+<meta name="keywords" content="STEM education, digital literacy, Doña Ana County, Las Cruces, nonprofit, coding for kids, robotics workshops, technology education, digital divide, STEM nonprofit, New Mexico STEM">
+
+<!-- Open Graph Tags for Social Media Sharing -->
+<meta property="og:title" content="Roadrunner STEM Initiative | STEM & Digital Literacy in Doña Ana County">
+<meta property="og:description" content="Bridging the digital divide through accessible STEM education programs for students, parents, and seniors in southern New Mexico.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://roadrunnerSTEMinitiative.org/">
+<meta property="og:image" content="https://roadrunnerSTEMinitiative.org/assets/images/roadrunner-stem-logo.jpg">
+<meta property="og:site_name" content="Roadrunner STEM Initiative">
+<meta property="og:locale" content="en_US">
+
+<!-- Geo Meta Tags for Local SEO -->
+<meta name="geo.region" content="US-NM">
+<meta name="geo.placename" content="Doña Ana County, Las Cruces">
+<meta name="geo.position" content="32.3199;-106.7637">
+<meta name="ICBM" content="32.3199, -106.7637">
+
+<!-- Canonical URL to prevent duplicate content issues -->
+<meta rel="canonical" href="https://roadrunnerSTEMinitiative.org{{ page.url }}">
+
+<!-- Structured Data for Nonprofits (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Roadrunner STEM Initiative",
+  "alternateName": "Roadrunner STEM",
+  "url": "https://roadrunnerSTEMinitiative.org",
+  "logo": "https://roadrunnerSTEMinitiative.org/assets/images/roadrunner-stem-logo.jpg",
+  "description": "Roadrunner STEM Initiative bridges the digital divide in Doña Ana County by providing accessible STEM education and digital literacy programs for students, parents, and seniors.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Las Cruces",
+    "addressRegion": "NM",
+    "postalCode": "88001",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "General Inquiries",
+    "email": "info-seo@roadrunnerSTEMinitiative.org",
+    "url": "https://roadrunnerSTEMinitiative.org/contact"
+  },
+  "foundingDate": "2025",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Doña Ana County"
+  },
+  "nonprofitStatus": "501(c)(3) pending",
+  "keywords": "STEM education, digital literacy, coding workshops, robotics, Doña Ana County, nonprofit, digital divide",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.3199,
+      "longitude": -106.7637
+    },
+    "geoRadius": "50 mi"
+  },
+  "potentialAction": {
+    "@type": "DonateAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://roadrunnerSTEMinitiative.org/support"
+    }
+  }
+}
+</script>
+
+<!-- Local Business Structured Data (for local presence) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Roadrunner STEM Initiative",
+  "description": "Nonprofit organization providing STEM education and digital literacy programs in Doña Ana County.",
+  "url": "https://roadrunnerSTEMinitiative.org",
+  "telephone": "+15753231140",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Las Cruces",
+    "addressRegion": "NM",
+    "postalCode": "88001",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.3199,
+    "longitude": -106.7637
+  },
+}
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title | default("Roadrunner STEM Initiative") }}</title>
+
+
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  {% include "_includes/header.njk" %}
+    <main>
+      {{ content | safe }}
+    </main>
+  {% include "_includes/footer.njk" %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const contactToggle = document.getElementById('contactToggle');
+    const contactPanel = document.getElementById('contactPanel');
+    const closeBtn = document.querySelector('.contact-panel .close-btn');
+
+    // Toggle open
+    if (contactToggle && contactPanel) {
+      contactToggle.addEventListener('click', () => {
+        contactPanel.classList.add('active');
+      });
+    }
+
+    // Close on ✕ button
+    if (closeBtn && contactPanel) {
+      closeBtn.addEventListener('click', () => {
+        contactPanel.classList.remove('active');
+      });
+    }
+
+    // Optional: Close on outside click
+    document.addEventListener('click', (event) => {
+      if (
+        contactPanel.classList.contains('active') &&
+        !contactPanel.contains(event.target) &&
+        event.target.id !== 'contactToggle'
+      ) {
+        contactPanel.classList.remove('active');
+      }
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const roleSelect = document.getElementById('community-role');
+    const otherContainer = document.getElementById('community-other-container');
+
+    if (roleSelect && otherContainer) {
+      roleSelect.addEventListener('change', () => {
+        otherContainer.style.display = roleSelect.value === 'Other' ? 'block' : 'none';
+      });
+    }
+  });
+</script>
+
+{% include "_includes/contact-panel.njk" %}
+
+</body>
+
+</html>
