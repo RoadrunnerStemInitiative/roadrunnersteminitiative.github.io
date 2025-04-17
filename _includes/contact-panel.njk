@@ -1,12 +1,20 @@
+
+
+
+
 <div id="contactPanel" class="contact-panel">
   <button class="close-btn" onclick="toggleContact()">✕</button>
-    <h2>Contact Us</h2>
-      <p>Have a question, idea, or want to get involved?</p>
+    
+  <h2>Contact Us</h2>
+    <p>Have a question, idea, or want to get involved?</p>
  
-  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
   <p hidden>
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
+
+<input type="hidden" name="form-name" value="contact" />
 
 <label>Name:<br>
     <input type="text" name="name" placeholder="Jane Doe" required>
